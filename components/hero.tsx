@@ -52,7 +52,7 @@ export function Hero() {
         <div data-reveal className="relative z-10">
           <div className="relative mx-auto max-w-xl overflow-hidden rounded-[2rem] border border-white/12 bg-white/10 p-4 shadow-[0_30px_120px_rgba(0,0,0,0.35)] backdrop-blur-xl">
             <img
-              src={assetPath("/hero-professional.jpg")}
+              src={assetPath("/hero-professional.png")}
               alt="Foto profesional OMBAK"
               className="h-[520px] w-full rounded-[1.5rem] object-cover object-center shadow-premium"
             />
