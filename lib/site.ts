@@ -1,4 +1,4 @@
-export const whatsappNumber = "628xxxxxxxxxx";
+export const whatsappNumber = "6281323455243";
 
 export const navItems = [
   { label: "Beranda", href: "#beranda" },
