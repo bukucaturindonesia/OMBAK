@@ -2,7 +2,7 @@
 
 import { Menu, MessageCircle, X } from "lucide-react";
 import { useState } from "react";
-import { buildWhatsAppUrl, navItems } from "@/lib/site";
+import { assetPath, buildWhatsAppUrl, navItems } from "@/lib/site";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,15 +14,15 @@ export function Navbar() {
         aria-label="Navigasi utama"
       >
         <a href="#beranda" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-sm font-black tracking-tight text-ocean-950">
-            OM
-          </span>
+          <img
+            src={assetPath("/ombak-logo.png")}
+            alt="Logo OMBAK"
+            className="h-12 w-12 rounded-2xl bg-white object-contain p-1 shadow-md"
+          />
+
           <span>
             <span className="block text-xl font-black tracking-tight">
               OMBAK
-            </span>
-            <span className="block text-xs font-medium uppercase tracking-[0.2em] text-gold-300">
-              by Om Bakri
             </span>
           </span>
         </a>
@@ -42,7 +42,7 @@ export function Navbar() {
         <div className="hidden lg:block">
           <a
             href={buildWhatsAppUrl(
-              "Halo Om Bakri, saya tertarik bergabung menjadi mitra OMBAK.",
+              "Halo, saya tertarik bergabung menjadi mitra OMBAK.",
             )}
             target="_blank"
             rel="noreferrer"
@@ -77,9 +77,10 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
+
             <a
               href={buildWhatsAppUrl(
-                "Halo Om Bakri, saya tertarik bergabung menjadi mitra OMBAK.",
+                "Halo, saya tertarik bergabung menjadi mitra OMBAK.",
               )}
               target="_blank"
               rel="noreferrer"
